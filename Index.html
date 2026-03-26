@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los tiburones</title>
+    <style>
+        /* Estilos base */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #3EBAE0; /* Naranja vibrante */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Contenedor principal con Flexbox */
+        .container {
+            display: flex;
+            flex: 1;
+            flex-wrap: wrap; /* Permite que los elementos bajen de línea */
+        }
+
+        /* Secciones con colores diversos */
+        .barramenu {
+            background-color: #3E69E0; /* Verde lima */
+            flex: 1;
+            color: white;
+            min-width: 200px;
+            padding: 20px;
+        }
+
+        .principal {
+            background-color: #643EE0; /* Azul intenso */
+            color: white;
+            flex: 3;
+            min-width: 300px;
+            padding: 20px;
+        }
+
+        .infoextra {
+            background-color: #3B51E3; /* Magenta */
+            flex: 1;
+            color: white;
+            min-width: 200px;
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #793BE3;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Media Query para pantallas pequeñas */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column; /* Apila los divs verticalmente */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Todo sobre los tiburones</h1>
+    </header>
+
+    <div class="container">
+        <div class="barramenu">
+            <h3>Sobre los tiburones</h3>
+            <p>Los tiburones son peces cartilaginosos depredadores que habitan los océanos desde hace más de 400 millones de años, sobreviviendo incluso a los dinosaurios. Con más de 450 especies, su esqueleto de cartílago flexible y piel áspera les permite gran velocidad, siendo piezas clave para el equilibrio del ecosistema marino, aunque hoy muchas especies están amenazadas. </p>
+        </div>
+        
+        <div class="principal">
+            <h2>Tipos de tiburones</h2>
+            <p>Existen más de 450-500 especies de tiburones, peces cartilaginosos clasificados en nueve órdenes principales. Varían desde el gigante tiburón ballena (
+ m) hasta el pequeño tiburón linterna. Destacan depredadores como el blanco, tigre, toro y martillo, vitales para los ecosistemas marinos.</p>
+ <p>Aquí te detallo algunos de los tipos más conocidos y fascinantes:</p>
+ <p>Tiburón Ballena (Rhincodon typus): El pez más grande del mundo, inofensivo para los humanos, se alimenta por filtración.</p>
+ <p>Gran Tiburón Blanco (Carcharodon carcharias): Famoso por su tamaño y depredación en aguas frías y templadas.</p>
+ <p>Tiburón Tigre (Galeocerdo cuvier): Conocido por sus rayas transversales y por ser un depredador solitario nocturno.</p>
+ <p>Tiburón Martillo (Sphyrnidae): Fácilmente reconocible por la forma peculiar de su cabeza (cefofoil).</p>
+ <p>Tiburón Toro (Carcharhinus leucas): Conocido por su agresividad y capacidad de nadar en agua dulce.</p>
+        </div>
+
+        <div class="infoextra">
+            <h3>Imagenes de los tiburones</h3>
+            <p><img src="Tiburón Ballena.jpg" width="100%"></p>
+            <p><img src="Gran Tiburón Blanco.jpeg" width="100%"></p>
+            <p><img src="Tiburón Tigre.jpg" width="100%"></p>
+            <p><img src="Tiburón Martillo.jpeg" width="100%"></p>
+            <p><img src="Tiburón Toro.jpg" width="100%"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Todo sobre los tiburones &copy; 2026</p>
+    </footer>
+
+</body>
+</html>
